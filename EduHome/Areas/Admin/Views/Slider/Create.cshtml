@@ -1,0 +1,22 @@
+﻿@model SliderCreateVM
+
+<div class="Container">
+    <form asp-area="admin" asp-action="create" method="post" enctype="multipart/form-data">
+    <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Title">Title</label>
+            <input class="form-control" asp-for="Title"  aria-describedby="emailHelp" >
+        </div>
+        <div class="form-group">
+            <label asp-for="Text">Text</label>
+            <input class="form-control" asp-for="Text"aria-describedby="emailHelp">
+        </div>
+     
+        <div class="form-group">
+            <label asp-for="Image">Image</label>
+            <input class="form-control" asp-for="Image"aria-describedby="emailHelp">
+        </div>
+        <a class="btn btn-secondary" asp-action="index">Cancel</a>
+        <button type="submit" class="btn btn-primary">Create</button>
+    </form>
+</div>
