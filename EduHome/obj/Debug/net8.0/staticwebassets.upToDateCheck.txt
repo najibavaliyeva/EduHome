@@ -35,10 +35,6 @@ wwwroot\fonts\ionicons28b5.woff
 wwwroot\fonts\Material-Design-Iconic-Fontd1f1.ttf
 wwwroot\fonts\Material-Design-Iconic-Fontd1f1.woff
 wwwroot\fonts\Material-Design-Iconic-Fontd1f1.woff2
-wwwroot\images\slider\6c47b9b7-5c86-4523-8c1c-cdada3791dd0slider2.jpg
-wwwroot\images\slider\7168613a-c5c1-4859-937c-fe91d8ea1b98home.png
-wwwroot\images\slider\b09e6c6b-cf32-4598-9d4f-553bc916d9a6slider1.jpg
-wwwroot\images\slider\c3d4ac96-af8f-400b-8932-4fe3365da48dslider1.jpg
 wwwroot\img\about\about.png
 wwwroot\img\banner\banner.jpg
 wwwroot\img\blog\blog-detail.jpg
@@ -126,3 +122,7 @@ wwwroot\js\owl.carousel.min.js
 wwwroot\js\plugins.js
 wwwroot\js\vendor\jquery-1.12.0.min.js
 wwwroot\js\vendor\modernizr-2.8.3.min.js
+wwwroot\images\slider\6c47b9b7-5c86-4523-8c1c-cdada3791dd0slider2.jpg
+wwwroot\images\slider\c3d4ac96-af8f-400b-8932-4fe3365da48dslider1.jpg
+wwwroot\images\slider\7168613a-c5c1-4859-937c-fe91d8ea1b98home.png
+wwwroot\images\slider\b09e6c6b-cf32-4598-9d4f-553bc916d9a6slider1.jpg
