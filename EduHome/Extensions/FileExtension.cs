@@ -1,7 +1,7 @@
 ﻿using EduHome.Contexts;
 using EduHome.Enums;
 using EduHome.Services.Interfaces;
-using EduHome.ViewModels.Slider;
+using EduHome.ViewModels;
 using Microsoft.EntityFrameworkCore;
 
 namespace EduHome.Extensions

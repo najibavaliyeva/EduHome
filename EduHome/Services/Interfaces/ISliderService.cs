@@ -1,4 +1,4 @@
-﻿using EduHome.ViewModels.Slider;
+﻿using EduHome.Areas.Admin.ViewModels.Slider;
 
 namespace EduHome.Services.Interfaces
 {

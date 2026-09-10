@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EduHome.ViewModels.Category
+namespace EduHome.Areas.Admin.ViewModels.Category
 {
-    public class CategoryCreateVM
+    public record CategoryCreateVM
     {
         [Required]
         [MinLength(3)]

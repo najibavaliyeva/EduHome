@@ -1,6 +1,6 @@
-﻿namespace EduHome.ViewModels.Category
+﻿namespace EduHome.Areas.Admin.ViewModels.Category
 {
-    public class CategoryGetVM
+    public record CategoryGetVM
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -1,8 +1,8 @@
-﻿using EduHome.Contexts;
+﻿using EduHome.Areas.Admin.ViewModels.Category;
+using EduHome.Contexts;
 using EduHome.Migrations;
 using EduHome.Models;
 using EduHome.Services.Interfaces;
-using EduHome.ViewModels.Category;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
@@ -50,6 +50,9 @@ namespace EduHome.Services.Implements
             var vm = new CategoryGetVM
             {
                 Name = category.Name,
+                CreatedAt = category.CreatedAt,
+                Id = category.Id,
+                UpdatedAt = category.UpdatedAt
             }; return vm;
         }
 

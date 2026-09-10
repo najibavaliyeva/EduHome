@@ -1,6 +1,6 @@
-﻿namespace EduHome.ViewModels.Slider
+﻿namespace EduHome.Areas.Admin.ViewModels.Slider
 {
-    public class SliderGetVM
+    public record SliderGetVM
     {
         public int Id { get; set; }
         public string Image { get; set; }

@@ -1,4 +1,4 @@
-﻿using EduHome.ViewModels.Category;
+﻿using EduHome.Areas.Admin.ViewModels.Category;
 
 namespace EduHome.Services.Interfaces
 {

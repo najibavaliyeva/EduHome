@@ -1,9 +1,9 @@
-﻿using EduHome.Contexts;
+﻿using EduHome.Areas.Admin.ViewModels.Slider;
+using EduHome.Contexts;
 using EduHome.Enums;
 using EduHome.Extensions;
 using EduHome.Models;
 using EduHome.Services.Interfaces;
-using EduHome.ViewModels.Slider;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata;
 

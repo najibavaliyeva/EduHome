@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace EduHome.ViewModels.Slider
+namespace EduHome.Areas.Admin.ViewModels.Slider
 {
-    public class SliderUpdateVM
+    public record SliderUpdateVM
     {     
              public string? ImageName { get; set; }
             public IFormFile? Image { get; set; }

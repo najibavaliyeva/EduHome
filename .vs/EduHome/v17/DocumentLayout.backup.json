@@ -3,6 +3,70 @@
   "WorkspaceRootPath": "D:\\Backend\\EduHome\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\services\\implements\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\services\\implements\\blogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\viewmodels\\blog\\blogupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\viewmodels\\blog\\blogupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\viewmodels\\blog\\blogcreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\viewmodels\\blog\\blogcreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\viewmodels\\detailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\viewmodels\\detailvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\viewmodels\\blogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\viewmodels\\blogvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\views\\blog\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\blog\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\extensions\\fileextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\extensions\\fileextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -11,8 +75,64 @@
       "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\migrations\\20260905181725_add-migration blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\migrations\\20260905181725_add-migration blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\migrations\\20260901155305_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\migrations\\20260901155305_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\models\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\services\\interfaces\\iblogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\services\\interfaces\\iblogservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\migrations\\20260901155305_category.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\migrations\\20260901155305_category.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\viewmodels\\category\\categorycreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\viewmodels\\category\\categorycreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\views\\blog\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\blog\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\viewmodels\\category\\categorygetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\viewmodels\\category\\categorygetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\viewmodels\\category\\categoryupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\viewmodels\\category\\categoryupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\viewmodels\\slider\\sliderupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\viewmodels\\slider\\sliderupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\viewmodels\\slider\\slidergetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\viewmodels\\slider\\slidergetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\views\\category\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\category\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\services\\implements\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,44 +143,8 @@
       "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\services\\interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\views\\category\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\category\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\viewmodels\\category\\categoryupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\viewmodels\\category\\categoryupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\viewmodels\\category\\categorycreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\viewmodels\\category\\categorycreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\viewmodels\\category\\categorygetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\viewmodels\\category\\categorygetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\migrations\\20260901155305_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\migrations\\20260901155305_category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|d:\\backend\\eduhome\\eduhome\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F86E63B9-5BC3-40AB-8C1E-017A9825B0AA}|EduHome\\EduHome.csproj|solutionrelative:eduhome\\areas\\admin\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,46 +158,32 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Category\\Update.cshtml",
-              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\Category\\Update.cshtml",
-              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Category\\Update.cshtml",
-              "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\Category\\Update.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-02T18:55:42.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Services\\Interfaces\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "EduHome\\Services\\Interfaces\\ICategoryService.cs",
-              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Services\\Interfaces\\ICategoryService.cs",
-              "RelativeToolTip": "EduHome\\Services\\Interfaces\\ICategoryService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T15:57:26.351Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Services\\Implements\\CategoryService.cs",
-              "RelativeDocumentMoniker": "EduHome\\Services\\Implements\\CategoryService.cs",
-              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Services\\Implements\\CategoryService.cs",
-              "RelativeToolTip": "EduHome\\Services\\Implements\\CategoryService.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwEwAAAA8AAAAAAAAAA==",
+              "Title": "DetailVM.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\ViewModels\\DetailVM.cs",
+              "RelativeDocumentMoniker": "EduHome\\ViewModels\\DetailVM.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\ViewModels\\DetailVM.cs",
+              "RelativeToolTip": "EduHome\\ViewModels\\DetailVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T15:58:48.6Z",
+              "WhenOpened": "2026-09-10T12:34:06.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-01T16:22:37.64Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Contexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "EduHome\\Contexts\\AppDbContext.cs",
@@ -125,7 +195,178 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlogCreateVM.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Blog\\BlogCreateVM.cs",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\ViewModels\\Blog\\BlogCreateVM.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Blog\\BlogCreateVM.cs",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\ViewModels\\Blog\\BlogCreateVM.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBAAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T18:24:59.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BlogUpdateVM.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Blog\\BlogUpdateVM.cs",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\ViewModels\\Blog\\BlogUpdateVM.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Blog\\BlogUpdateVM.cs",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\ViewModels\\Blog\\BlogUpdateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T18:26:44.579Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BlogService.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Services\\Implements\\BlogService.cs",
+              "RelativeDocumentMoniker": "EduHome\\Services\\Implements\\BlogService.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Services\\Implements\\BlogService.cs*",
+              "RelativeToolTip": "EduHome\\Services\\Implements\\BlogService.cs*",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwFAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T18:19:10.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BlogVM.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\ViewModels\\BlogVM.cs",
+              "RelativeDocumentMoniker": "EduHome\\ViewModels\\BlogVM.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\ViewModels\\BlogVM.cs",
+              "RelativeToolTip": "EduHome\\ViewModels\\BlogVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T10:38:08.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "EduHome\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "EduHome\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowEMAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-08T10:42:25.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "EduHome\\Controllers\\BlogController.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "EduHome\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAmwAYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-09T17:57:51.69Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Program.cs",
+              "RelativeDocumentMoniker": "EduHome\\Program.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Program.cs",
+              "RelativeToolTip": "EduHome\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T16:31:51.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwCIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T19:44:37.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Blog\\Create.cshtml",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\Blog\\Create.cshtml",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Blog\\Create.cshtml",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\Blog\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAowAkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-07T12:40:00.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAowBkAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-05T19:46:24.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-01T16:52:14.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "EduHome\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "EduHome\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-08T10:40:51.043Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FileExtension.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Extensions\\FileExtension.cs",
+              "RelativeDocumentMoniker": "EduHome\\Extensions\\FileExtension.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Extensions\\FileExtension.cs",
+              "RelativeToolTip": "EduHome\\Extensions\\FileExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T10:35:32.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-07T17:40:52.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Category\\Create.cshtml",
               "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\Category\\Create.cshtml",
@@ -133,12 +374,11 @@
               "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\Category\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T16:21:36.954Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T16:21:36.954Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 16,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Category\\Index.cshtml",
               "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\Category\\Index.cshtml",
@@ -146,112 +386,23 @@
               "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\Category\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T16:29:07.619Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-01T16:29:07.619Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CategoryUpdateVM.cs",
-              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\ViewModels\\Category\\CategoryUpdateVM.cs",
-              "RelativeDocumentMoniker": "EduHome\\ViewModels\\Category\\CategoryUpdateVM.cs",
-              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\ViewModels\\Category\\CategoryUpdateVM.cs",
-              "RelativeToolTip": "EduHome\\ViewModels\\Category\\CategoryUpdateVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "20260905181725_add-migration blog.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Migrations\\20260905181725_add-migration blog.cs",
+              "RelativeDocumentMoniker": "EduHome\\Migrations\\20260905181725_add-migration blog.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Migrations\\20260905181725_add-migration blog.cs",
+              "RelativeToolTip": "EduHome\\Migrations\\20260905181725_add-migration blog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAkAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-02T13:30:12.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-09-05T18:17:25.239Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CategoryGetVM.cs",
-              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\ViewModels\\Category\\CategoryGetVM.cs",
-              "RelativeDocumentMoniker": "EduHome\\ViewModels\\Category\\CategoryGetVM.cs",
-              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\ViewModels\\Category\\CategoryGetVM.cs",
-              "RelativeToolTip": "EduHome\\ViewModels\\Category\\CategoryGetVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T16:34:35.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CategoryCreateVM.cs",
-              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\ViewModels\\Category\\CategoryCreateVM.cs",
-              "RelativeDocumentMoniker": "EduHome\\ViewModels\\Category\\CategoryCreateVM.cs",
-              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\ViewModels\\Category\\CategoryCreateVM.cs",
-              "RelativeToolTip": "EduHome\\ViewModels\\Category\\CategoryCreateVM.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T16:01:19.931Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "EduHome\\Models\\Category.cs",
-              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Models\\Category.cs",
-              "RelativeToolTip": "EduHome\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T15:49:16.264Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\Dashboard\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T16:52:14.83Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryController.cs",
-              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "RelativeToolTip": "EduHome\\Areas\\Admin\\Controllers\\CategoryController.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAiwDQAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T16:17:02.092Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Program.cs",
-              "RelativeDocumentMoniker": "EduHome\\Program.cs",
-              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Program.cs",
-              "RelativeToolTip": "EduHome\\Program.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T16:31:51.986Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T16:22:37.64Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "20260901155305_category.cs",
               "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Migrations\\20260901155305_category.cs",
               "RelativeDocumentMoniker": "EduHome\\Migrations\\20260901155305_category.cs",
@@ -260,6 +411,186 @@
               "ViewState": "AgIAAAsAAAAAAAAAAAAAwBwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-01T15:53:05.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Blog.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Models\\Blog.cs",
+              "RelativeDocumentMoniker": "EduHome\\Models\\Blog.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Models\\Blog.cs",
+              "RelativeToolTip": "EduHome\\Models\\Blog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T18:05:38.379Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IBlogService.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Services\\Interfaces\\IBlogService.cs",
+              "RelativeDocumentMoniker": "EduHome\\Services\\Interfaces\\IBlogService.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Services\\Interfaces\\IBlogService.cs",
+              "RelativeToolTip": "EduHome\\Services\\Interfaces\\IBlogService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T18:18:59.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20260901155305_category.Designer.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Migrations\\20260901155305_category.Designer.cs",
+              "RelativeDocumentMoniker": "EduHome\\Migrations\\20260901155305_category.Designer.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Migrations\\20260901155305_category.Designer.cs",
+              "RelativeToolTip": "EduHome\\Migrations\\20260901155305_category.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-08T10:28:57.633Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "EduHome\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Properties\\launchSettings.json",
+              "RelativeToolTip": "EduHome\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-09-07T19:32:48.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "CategoryCreateVM.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryCreateVM.cs",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryCreateVM.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryCreateVM.cs",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryCreateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T16:01:19.931Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Blog\\Update.cshtml",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\Blog\\Update.cshtml",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Blog\\Update.cshtml",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\Blog\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-07T18:55:32.785Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CategoryUpdateVM.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryUpdateVM.cs",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryUpdateVM.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryUpdateVM.cs",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryUpdateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T13:30:12.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "SliderGetVM.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Slider\\SliderGetVM.cs",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\ViewModels\\Slider\\SliderGetVM.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Slider\\SliderGetVM.cs",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\ViewModels\\Slider\\SliderGetVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T19:37:57.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SliderUpdateVM.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Slider\\SliderUpdateVM.cs",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\ViewModels\\Slider\\SliderUpdateVM.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Slider\\SliderUpdateVM.cs",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\ViewModels\\Slider\\SliderUpdateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-05T19:38:07.072Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "CategoryGetVM.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryGetVM.cs",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryGetVM.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryGetVM.cs",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\ViewModels\\Category\\CategoryGetVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T16:34:35.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Category\\Update.cshtml",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Views\\Category\\Update.cshtml",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Views\\Category\\Update.cshtml",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\Views\\Category\\Update.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-02T18:55:42.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ICategoryService.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Services\\Interfaces\\ICategoryService.cs",
+              "RelativeDocumentMoniker": "EduHome\\Services\\Interfaces\\ICategoryService.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Services\\Interfaces\\ICategoryService.cs",
+              "RelativeToolTip": "EduHome\\Services\\Interfaces\\ICategoryService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T15:57:26.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CategoryService.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Services\\Implements\\CategoryService.cs",
+              "RelativeDocumentMoniker": "EduHome\\Services\\Implements\\CategoryService.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Services\\Implements\\CategoryService.cs",
+              "RelativeToolTip": "EduHome\\Services\\Implements\\CategoryService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T15:58:48.6Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "EduHome\\Models\\Category.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Models\\Category.cs",
+              "RelativeToolTip": "EduHome\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T15:49:16.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "EduHome\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\Backend\\EduHome\\EduHome\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "EduHome\\Areas\\Admin\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwDQAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-01T16:17:02.092Z"
             }
           ]
         }
