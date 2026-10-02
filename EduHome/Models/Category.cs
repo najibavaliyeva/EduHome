@@ -6,5 +6,6 @@ namespace EduHome.Models
     {
         public string Name { get; set; }
         public ICollection<Blog> Blogs { get; set; } = new List<Blog>(); //many teref
+        public ICollection<Course> Courses { get; set; } = new List<Course>();
     }
 }

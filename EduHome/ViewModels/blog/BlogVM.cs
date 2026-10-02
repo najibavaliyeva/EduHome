@@ -1,11 +1,11 @@
 ﻿using EduHome.Areas.Admin.ViewModels.Blog;
 using EduHome.Areas.Admin.ViewModels.Category;
 
-namespace EduHome.ViewModels
+namespace EduHome.ViewModels.blog
 {
-    public class DetailVM
+    public class BlogVM
     {
+         public ICollection<BlogGetVM> Blogs { get; set; }  = new List<BlogGetVM>();    
         public ICollection<CategoryGetVM> Categories { get; set; } = new List<CategoryGetVM>();
-        public BlogGetVM Blog { get; set; }
     }
 }

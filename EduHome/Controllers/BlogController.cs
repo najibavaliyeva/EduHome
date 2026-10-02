@@ -1,5 +1,6 @@
-﻿using EduHome.Services.Interfaces;
-using EduHome.ViewModels;
+﻿using AspNetCoreGeneratedDocument;
+using EduHome.Services.Interfaces;
+using EduHome.ViewModels.blog;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EduHome.Controllers
@@ -25,9 +26,15 @@ namespace EduHome.Controllers
             }; return View(vm);
         } 
 
-        public IActionResult Details()
+        public IActionResult Details(int id)
         {
-            return View();
+            var blog = _blogService.GetSingle(id);
+            var vm = new BlogDetailVM
+            {
+                Blog = blog,
+                Categories = _categoryService.GetAll(),
+            };
+            return View(vm);
         }
     }
 }

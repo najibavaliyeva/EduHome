@@ -1,0 +1,121 @@
+﻿@using EduHome.Areas.Admin.ViewModels.Course
+@using EduHome.Enums
+@model CourseUpdateVM
+
+<div class="container my-5">
+    <h2 class="mb-4">Kursu Redaktə Et (Update)</h2>
+
+    <form asp-area="admin" asp-action="update" method="post" enctype="multipart/form-data">
+        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+        <!-- Mövcud Şəkil Keçidi (Preview) -->
+        @if (!string.IsNullOrEmpty(Model.ImageName))
+        {
+            <div class="mb-4">
+                <label class="form-label d-block fw-bold">Mövcud Şəkil:</label>
+                <img style="width:150px; height:150px; object-fit:cover;" class="img-thumbnail" src="~/images/course/@Model.ImageName" alt="Course Image" />
+            </div>
+        }
+
+        <div class="row">
+            <!-- Sol Panel: Mətn sahələri -->
+            <div class="col-md-8">
+                <div class="form-group mb-3">
+                    <label asp-for="Title" class="form-label fw-bold">Kursun Adı (Title)</label>
+                    <input class="form-control" asp-for="Title" placeholder="Kursun adını daxil edin">
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Info" class="form-label fw-bold">Qısa Məlumat (Info)</label>
+                    <textarea class="form-control" asp-for="Info" rows="2" placeholder="Kurs haqqında qısa xülasə..."></textarea>
+                    <span asp-validation-for="Info" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Description" class="form-label fw-bold">Ətraflı Təsvir (Description)</label>
+                    <textarea class="form-control" asp-for="Description" rows="5" placeholder="Kursun tam məzmunu..."></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+            </div>
+
+            <!-- Sağ Panel: Qiymət, Tarix, Şəkil yükləmə -->
+            <div class="col-md-4">
+                <div class="form-group mb-3">
+                    <label asp-for="Image" class="form-label fw-bold">Yeni Şəkil Seç (Məcburi deyil)</label>
+                    <input type="file" class="form-control" asp-for="Image" accept="image/*">
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="Price" class="form-label fw-bold">Qiymət (Price)</label>
+                    <input type="number" step="0.01" class="form-control" asp-for="Price" placeholder="0.00">
+                    <span asp-validation-for="Price" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <label asp-for="StartsAt" class="form-label fw-bold">Başlama Tarixi (StartsAt)</label>
+                    <input type="date" class="form-control" asp-for="StartsAt">
+                    <span asp-validation-for="StartsAt" class="text-danger"></span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-4" />
+
+        <!-- Alt Panel: Kursun Parametrləri və Enum-lar -->
+        <div class="row">
+            <div class="col-md-3 col-sm-6 mb-3">
+                <label asp-for="DurationInMonth" class="form-label fw-bold">Kursun Müddəti (Ay)</label>
+                <input type="number" min="1" max="255" class="form-control" asp-for="DurationInMonth">
+                <span asp-validation-for="DurationInMonth" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-3">
+                <label asp-for="ClassDurationInHours" class="form-label fw-bold">Dərs Müddəti (Saat)</label>
+                <input type="number" min="1" max="255" class="form-control" asp-for="ClassDurationInHours">
+                <span asp-validation-for="ClassDurationInHours" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-3">
+                <label asp-for="StudentCapacity" class="form-label fw-bold">Tələbə Tutumu</label>
+                <input type="number" min="1" class="form-control" asp-for="StudentCapacity">
+                <span asp-validation-for="StudentCapacity" class="text-danger"></span>
+            </div>
+
+            <div class="col-md-3 col-sm-6 mb-3">
+                <label asp-for="SkillLevel" class="form-label fw-bold">Çətinlik Səviyyəsi</label>
+                <select asp-for="SkillLevel" asp-items="Html.GetEnumSelectList<SkillLevel>()" class="form-select">
+                    <option value="">Səviyyə Seçin</option>
+                </select>
+                <span asp-validation-for="SkillLevel" class="text-danger"></span>
+            </div>
+        </div>
+
+        <div class="row align-items-center mt-2">
+            <div class="col-md-6 mb-3">
+                <label asp-for="Language" class="form-label fw-bold">Tədris Dili</label>
+                <select asp-for="Language" asp-items="Html.GetEnumSelectList<Language>()" class="form-select">
+                    <option value="">Dil Seçin</option>
+                </select>
+                <span asp-validation-for="Language" class="text-danger"></span>
+            </div>
+
+            <@* div class="col-md-6 mb-3">
+                <div class="form-check mt-4">
+                    <input type="checkbox" class="form-check-input" asp-for="IsSelfAssesment">
+                    <label asp-for="IsSelfAssesment" class="form-check-label fw-bold">Self Assessment Mövcuddur</label>
+                </div>
+                <span asp-validation-for="IsSelfAssesment" class="text-danger"></span>
+            </div> *@
+        </div>
+
+        <!-- Əməliyyat Düymələri -->
+        <div class="mt-4">
+            <a class="btn btn-secondary me-2" asp-action="index">İmtina Et</a>
+            <button type="submit" class="btn btn-primary">Yenilə (Update)</button>
+        </div>
+    </form>
+</div>
+
+

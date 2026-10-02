@@ -79,7 +79,7 @@ namespace EduHome.Services.Implements
 
 
             var entry = _context.Remove(slider);
-            if (entry.State != EntityState.Deleted) throw new Exception("Remove failed");
+            if (entry.State != EntityState.Deleted) throw new Exception("RemoveAsync failed");
             var count = _context.SaveChanges();
             if (count <= 0) throw new Exception("Save failed!");
 

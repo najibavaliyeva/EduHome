@@ -9,9 +9,9 @@ namespace EduHome.Services.Interfaces
         void Remove(int id);
          CategoryGetVM GetSingle(int id);  
         void Update(int id ,CategoryUpdateVM vm);
-        //Create
-        //GetAll
-        //Remove
+        //CreateAsync
+        //GetAllAsync
+        //RemoveAsync
         //Update
         //GetSingle
     }

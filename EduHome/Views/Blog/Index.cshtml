@@ -1,4 +1,5 @@
-﻿ @model BlogVM
+﻿@using EduHome.ViewModels.blog
+ @model BlogVM
 <!-- Banner Area Start -->
 <div class="banner-area-wrapper">
     <div class="banner-area text-center">
@@ -27,7 +28,7 @@
                         <div class="col-md-6 col-sm-6 col-xs-12">
                             <div class="single-blog mb-60">
                                 <div class="blog-img">
-                                    <a href="#"><img src="~/images/blog/@item.Image" alt="blog"></a>
+                                    <a href="#"><img src="/images/blog/@item.Image" alt="blog"></a>
                                     <div class="blog-hover">
                                         <i class="fa fa-link"></i>
                                     </div>
@@ -37,8 +38,8 @@
                                         <p>By Alex  /   @item.CreatedAt.ToString(" dddd, MM dd yyyy")  /  <i class="fa fa-comments-o"></i> 4</p>
                                     </div>
                                     <div class="blog-bottom">
-                                        <h2><a asp-action="details">@item.Title</a></h2>
-                                        <a href="blog-details.html">read more</a>
+                                        <h2><a asp-action="details" asp-route-id="@item.Id">@item.Title</a></h2>
+                                        <a asp-action="details" asp-route-id="@item.Id"> read more</a>
                                     </div>
                                 </div>
                             </div>

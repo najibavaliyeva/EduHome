@@ -62,7 +62,7 @@ namespace EduHome.Services.Implements
             if (category == null) throw new Exception("Category not found!");
 
             var entry = _context.Remove(category);
-            if (entry.State != EntityState.Deleted) throw new Exception("Remove failed");
+            if (entry.State != EntityState.Deleted) throw new Exception("RemoveAsync failed");
             var count = _context.SaveChanges();
             if (count <= 0) throw new Exception("Save failed!");
 

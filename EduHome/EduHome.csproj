@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.30" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.30">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -17,7 +18,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Teacher\Controllers\" />
+    <Folder Include="Areas\Teacher\Data\" />
+    <Folder Include="Areas\Teacher\Models\" />
+    <Folder Include="Areas\Teacher\Views\" />
     <Folder Include="wwwroot\images\blog\" />
+    <Folder Include="wwwroot\images\course\" />
     <Folder Include="wwwroot\images\slider\" />
     <Folder Include="wwwroot\im\" />
   </ItemGroup>

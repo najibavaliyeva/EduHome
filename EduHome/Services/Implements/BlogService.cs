@@ -1,5 +1,6 @@
 ﻿using EduHome.Areas.Admin.ViewModels.Blog;
 using EduHome.Contexts;
+using EduHome.Enums;
 using EduHome.Extensions;
 using EduHome.Models;
 using EduHome.Services.Interfaces;
@@ -21,8 +22,12 @@ namespace EduHome.Services.Implements
 
         public void Create(BlogCreateVM vm)
         {
+
             var category = _context.categories.Find(vm.CategoryId);
             if (category == null) throw new Exception("Category not found");
+
+            if (!vm.Image.IsSizeValid(2, FileSize.MB)) throw new Exception("Size is not valid!");
+            if (!vm.Image.IsFormatValid()) throw new Exception("Format is not valid");
             var blog = new Blog
             {
                 Text = vm.Text,
@@ -78,7 +83,7 @@ namespace EduHome.Services.Implements
             if(File.Exists(path)) File.Delete(path);
 
             var entry = _context.blogs.Remove(blog);
-            if (entry.State != EntityState.Deleted) throw new Exception("Remove failed");
+            if (entry.State != EntityState.Deleted) throw new Exception("RemoveAsync failed");
             var count = _context.SaveChanges();
             if (count <= 0) throw new Exception("Save failed");
         }

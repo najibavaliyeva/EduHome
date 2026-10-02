@@ -2,7 +2,7 @@
 
 namespace EduHome.Controllers
 {
-    public class TeacherController : Controller
+    public class InstructorController : Controller
     {
         public IActionResult Index()
         {

@@ -1,6 +1,9 @@
 using EduHome.Contexts;
+using EduHome.Models;
+using EduHome.Models.BaseModel;
 using EduHome.Services.Implements;
 using EduHome.Services.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 using Npgsql;
@@ -13,9 +16,14 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("default")));
+builder.Services.AddIdentity<BaseUser, Role>().AddEntityFrameworkStores<AppDbContext>();
+
 builder.Services.AddScoped<ISliderService, SliderService>();
 builder.Services.AddScoped<IBlogService, BlogService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<ICourseService, CourseService>();
+builder.Services.AddScoped<ITeacherService, TeacherService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
