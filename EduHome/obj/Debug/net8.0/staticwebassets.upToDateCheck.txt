@@ -132,3 +132,4 @@ wwwroot\img\icon\section1.png
 wwwroot\img\footer\footer3.jpg
 wwwroot\img\icon\section.png
 wwwroot\images\course\15cad9be-843b-4884-8606-c204380c5eb5Screenshot 2026-07-23 141043.png
+wwwroot\images\course\c24867ac-a8ad-4874-a07f-3d105a140c23file.jpg

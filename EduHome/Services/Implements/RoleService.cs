@@ -20,7 +20,7 @@ namespace EduHome.Services.Implements
             var role = new Role
             {
                 Description = vm.Description,
-                Name = vm.Name
+                Name = vm.Name.ToLower(),
             };
            var result= await _roleManager.CreateAsync(role);
             if (!result.Succeeded) throw new Exception("CreateAsync failed");
