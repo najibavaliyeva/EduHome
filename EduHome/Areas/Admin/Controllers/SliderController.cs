@@ -3,6 +3,7 @@ using EduHome.Contexts;
 using EduHome.Models;
 using EduHome.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace EduHome.Areas.Admin.Controllers
 {
@@ -17,7 +18,7 @@ namespace EduHome.Areas.Admin.Controllers
 
         public IActionResult Index()
         {
-            var vms = _service.GetAll();
+            var vms = _service.GetAllAsync();
             return View(vms);
         }
         public IActionResult Create()
@@ -26,23 +27,23 @@ namespace EduHome.Areas.Admin.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(SliderCreateVM vm)
+        public async Task<IActionResult> Create(SliderCreateVM vm)
         {
             if (!ModelState.IsValid) return View(vm);
-            _service.Create(vm);
+            await _service.CreateAsync(vm);
 
             return RedirectToAction(nameof(Index));
 
         }
         [HttpPost]
-        public IActionResult Remove(int id)
+        public async Task<IActionResult> Remove(int id)
         {
-            _service.Remove(id);
+            await _service.RemoveAsync(id);
             return RedirectToAction(nameof(Index));
         }
-        public IActionResult Update(int id)
+        public async Task<IActionResult> Update(int id)
         {
-            var slider = _service.GetSingle(id);
+            var slider = await _service.GetSingleAsync(id);
             var vm = new SliderUpdateVM
             {
                 ImageName = slider.Image,
@@ -52,10 +53,10 @@ namespace EduHome.Areas.Admin.Controllers
             return View(vm);
         }
         [HttpPost]
-        public IActionResult Update(int id, SliderUpdateVM vm)
+        public async Task<IActionResult> Update(int id, SliderUpdateVM vm)
         {
             if(!ModelState.IsValid) return View(vm);
-            _service.Update(id, vm);
+            await _service.UpdateAsync(id, vm);
             return RedirectToAction(nameof(Index));
 
         }

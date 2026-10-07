@@ -6,6 +6,7 @@ using EduHome.Models;
 using EduHome.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata;
+using System.Threading.Tasks;
 
 namespace EduHome.Services.Implements
 {
@@ -20,7 +21,7 @@ namespace EduHome.Services.Implements
             _env = env;
         }
 
-        public void Create(SliderCreateVM vm)
+        public async Task CreateAsync(SliderCreateVM vm)
         {
             if (! vm.Image.IsSizeValid(2, FileSize.MB)) throw new Exception("Size is not valid!");
             if (!vm.Image.IsFormatValid()) throw new Exception("Format is not valid");
@@ -32,16 +33,16 @@ namespace EduHome.Services.Implements
                 CreatedAt = DateTime.UtcNow.AddHours(3),
             };
 
-            var entry = _context.sliders.Add(slider);
+            var entry = await _context.sliders.AddAsync(slider);
             if (entry.State != EntityState.Added) throw new Exception("Add failed!");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save Slider failed!");
 
         }
 
-        public List<SliderGetVM> GetAll()
+        public async Task<List<SliderGetVM>> GetAllAsync()
         {
-            var sliders = _context.sliders.AsNoTracking().ToList();
+            var sliders = await _context.sliders.AsNoTracking().ToListAsync();
             var vms = sliders.Select(slider => new SliderGetVM
             {
                 Id = slider.Id,
@@ -54,9 +55,9 @@ namespace EduHome.Services.Implements
             return vms;
         }
 
-        public SliderGetVM GetSingle(int id)
+        public async Task<SliderGetVM> GetSingleAsync(int id)
         {
-            var slider = _context.sliders.AsNoTracking().FirstOrDefault(slider => slider.Id == id);
+            var slider = await _context.sliders.AsNoTracking().FirstOrDefaultAsync(slider => slider.Id == id);
             if (slider == null) throw new Exception("Slider not found!");
             var vm = new SliderGetVM
             {
@@ -70,9 +71,9 @@ namespace EduHome.Services.Implements
             return vm;
         }
 
-        public void Remove(int id)
+        public async Task RemoveAsync(int id)
         {
-            var slider = _context.sliders.Find(id);
+            var slider = await _context.sliders.FindAsync(id);
             if (slider == null) throw new Exception("Slider not found!");
             var path = $"{_env.WebRootPath}/images/slider/{slider.Image}";
             if (File.Exists(path)) File.Delete(path);
@@ -80,14 +81,14 @@ namespace EduHome.Services.Implements
 
             var entry = _context.Remove(slider);
             if (entry.State != EntityState.Deleted) throw new Exception("RemoveAsync failed");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save failed!");
 
         }
 
-        public void Update(int id, SliderUpdateVM vm)
+        public async Task UpdateAsync(int id, SliderUpdateVM vm)
         {
-            var slider = _context.sliders.Find();
+            var slider = await _context.sliders.FindAsync();
             if (slider == null) throw new Exception("Slider not found!");
             slider.Text = vm.Text;
             slider.Title = vm.Title;
@@ -102,7 +103,7 @@ namespace EduHome.Services.Implements
             slider.UpdatedAt = DateTime.UtcNow.AddHours(3);
             var entry = _context.sliders.Update(slider);
             if (entry.State != EntityState.Modified) throw new Exception("Update failed");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save failed");
         }
     }

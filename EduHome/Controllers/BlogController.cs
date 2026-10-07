@@ -2,6 +2,7 @@
 using EduHome.Services.Interfaces;
 using EduHome.ViewModels.blog;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace EduHome.Controllers
 {
@@ -16,23 +17,23 @@ namespace EduHome.Controllers
             this._blogService = blogService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             var vm = new BlogVM
             {
-                Blogs = _blogService.GetAll(),
-                Categories = _categoryService.GetAll(),
+                Blogs = await _blogService.GetAllAsync(),
+                Categories = await _categoryService.GetAllAsync(),
 
             }; return View(vm);
         } 
 
-        public IActionResult Details(int id)
+        public async Task<IActionResult> Details(int id)
         {
-            var blog = _blogService.GetSingle(id);
+            var blog = await _blogService.GetSingleAsync(id);
             var vm = new BlogDetailVM
             {
                 Blog = blog,
-                Categories = _categoryService.GetAll(),
+                Categories = await _categoryService.GetAllAsync(),
             };
             return View(vm);
         }

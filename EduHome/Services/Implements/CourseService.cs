@@ -6,6 +6,7 @@ using EduHome.Models;
 using EduHome.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata;
+using System.Threading.Tasks;
 
 namespace EduHome.Services.Implements
 {
@@ -20,9 +21,9 @@ namespace EduHome.Services.Implements
             _env = env;
         }
 
-        public void Create(CourseCreateVM vm)
+        public async Task CreateAsync(CourseCreateVM vm)
         {
-            var category = _context.categories.Find(vm.CategoryId);
+            var category = await _context.categories.FindAsync(vm.CategoryId);
             if (category == null) throw new Exception("Category not found");
 
             if (!vm.Image.IsSizeValid(2, FileSize.MB)) throw new Exception("Size is not valid!");
@@ -45,16 +46,16 @@ namespace EduHome.Services.Implements
                 StudentCapacity = vm.StudentCapacity,
                 Title = vm.Title
             };
-            var entry = _context.courses.Add(course);
+            var entry = await _context.courses.AddAsync(course);
             if (entry.State != EntityState.Added) throw new Exception("Add failed");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save failed");
 
         }
 
-        public List<CourseGetVM> GetAll()
+        public async Task<List<CourseGetVM>> GetAllAsync()
         {
-            var course = _context.courses.AsNoTracking().Include(c =>c.Category).ToList();
+            var course = await _context.courses.AsNoTracking().Include(c =>c.Category).ToListAsync();
             var vms = course.Select(course => new CourseGetVM
             {
                 ClassDurationInHours = course.ClassDurationInHours,
@@ -77,9 +78,9 @@ namespace EduHome.Services.Implements
             return vms;
         }
 
-        public CourseGetVM GetSingle(int id)
+        public async Task<CourseGetVM> GetSingleAsync(int id)
         {
-           var course = _context.courses.AsNoTracking().First( course =>  course.Id== id  );
+           var course = await _context.courses.AsNoTracking().FirstAsync( course =>  course.Id== id  );
             if (course == null) throw new Exception("Course not found");
             var vm = new CourseGetVM
             {
@@ -104,23 +105,23 @@ namespace EduHome.Services.Implements
             
         }
 
-        public void Remove(int id)
+        public async Task RemoveAsync(int id)
         {
-            var course = _context.courses.Find(id);
+            var course = await _context.courses.FindAsync(id);
             if (course == null) throw new Exception("Course not found");
             var path = $"{_env.WebRootPath}/images/course/{course.Image}";
             if(File.Exists(path)) File.Delete(path);
              var entry =  _context.courses.Remove(course);
             if (entry.State != EntityState.Deleted) throw new Exception("RemoveAsync failed");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save failed");
         
         }
 
-        public void Update(int id, CourseUpdateVM vm)
+        public async Task UpdateAsync(int id, CourseUpdateVM vm)
         {
 
-            var course = _context.courses.Find(id);
+            var course = await _context.courses.FindAsync(id);
             if (course == null) throw new Exception("Course not found");
             if (vm.Image != null)
             {
@@ -142,10 +143,8 @@ namespace EduHome.Services.Implements
             
             var entry = _context.courses.Update(course);
             if (entry.State != EntityState.Modified) throw new Exception("Update failed");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save failed");
-
-
         }
     }
 }

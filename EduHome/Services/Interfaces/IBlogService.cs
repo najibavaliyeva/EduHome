@@ -5,16 +5,16 @@ namespace EduHome.Services.Interfaces
     public interface IBlogService
     {
         //create
-        void Create( BlogCreateVM vm);
+        Task CreateAsync( BlogCreateVM vm);
 
         //remove
-        void Remove(int id);
+        Task RemoveAsync(int id);
         //update
-        void Update( int id, BlogUpdateVM vm);
+        Task UpdateAsync( int id, BlogUpdateVM vm);
         //getall
 
-        List<BlogGetVM> GetAll();
+         Task <List<BlogGetVM> > GetAllAsync();
         //getsingle
-        BlogGetVM GetSingle(int id);
+         Task <BlogGetVM > GetSingleAsync(int id);
     }
 }

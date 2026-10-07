@@ -6,16 +6,16 @@ namespace EduHome.Services.Interfaces
     public interface ICourseService
     {
         //create
-        void Create(CourseCreateVM vm);
+        Task CreateAsync(CourseCreateVM vm);
 
         //remove
-        void Remove(int id);
+        Task RemoveAsync(int id);
         //update
-        void Update(int id, CourseUpdateVM vm);
+        Task UpdateAsync(int id, CourseUpdateVM vm);
         //getall
 
-        List<CourseGetVM> GetAll();
+        Task <List<CourseGetVM>> GetAllAsync();
         //getsingle
-        CourseGetVM GetSingle(int id);
+        Task <CourseGetVM> GetSingleAsync(int id);
     }
 }

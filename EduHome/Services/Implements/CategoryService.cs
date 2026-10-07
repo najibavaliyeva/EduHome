@@ -5,6 +5,7 @@ using EduHome.Models;
 using EduHome.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace EduHome.Services.Implements
 {
@@ -17,22 +18,22 @@ namespace EduHome.Services.Implements
             _context = context;
         }
 
-        public void Create(CategoryCreateVM vm)
+        public async Task CreateAsync(CategoryCreateVM vm)
         {
             var category = new Category
             {
                 Name = vm.Name,
                 CreatedAt = DateTime.UtcNow.AddHours(3)
             };
-            var entry = _context.categories.Add(category);
+            var entry = await _context.categories.AddAsync(category);
             if (entry.State != EntityState.Added) throw new Exception("Add failed");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save failed");
         }
 
-        public List<CategoryGetVM> GetAll()
+        public async Task<List<CategoryGetVM>> GetAllAsync()
         {
-           var categories = _context.categories.AsNoTracking().ToList();
+           var categories = await _context.categories.AsNoTracking().ToListAsync();
             var vms = categories.Select(category => new CategoryGetVM
             {
                 Name = category.Name,
@@ -43,9 +44,9 @@ namespace EduHome.Services.Implements
                return vms;
         }
 
-        public CategoryGetVM GetSingle(int id)
+        public async Task<CategoryGetVM> GetSingleAsync(int id)
         {
-            var category = _context.categories.AsNoTracking().FirstOrDefault(category => category.Id == id);
+            var category = await _context.categories.AsNoTracking().FirstOrDefaultAsync(category => category.Id == id);
             if (category == null) throw new Exception("Category not found!");
             var vm = new CategoryGetVM
             {
@@ -56,27 +57,27 @@ namespace EduHome.Services.Implements
             }; return vm;
         }
 
-        public void Remove(int id)
+        public async Task RemoveAsync(int id)
         {
-            var category = _context.categories.Find(id);
+            var category = await _context.categories.FindAsync(id);
             if (category == null) throw new Exception("Category not found!");
 
             var entry = _context.Remove(category);
             if (entry.State != EntityState.Deleted) throw new Exception("RemoveAsync failed");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save failed!");
 
         }
 
-        public void Update(int id, CategoryUpdateVM vm)
+        public async Task UpdateAsync(int id, CategoryUpdateVM vm)
         {
-            var category = _context.categories.Find(id);
+            var category = await _context.categories.FindAsync(id);
             if (category == null) throw new Exception("Category not found!");
             category.Name = vm.Name;
             category.UpdatedAt = DateTime.UtcNow.AddHours(3);
             var entry = _context.Update(category);
             if (entry.State != EntityState.Modified) throw new Exception("Update failed");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save failed");
         }
     }

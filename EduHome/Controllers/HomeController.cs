@@ -1,6 +1,7 @@
 ﻿using EduHome.Migrations;
 using EduHome.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace EduHome.Controllers
 {
@@ -13,9 +14,9 @@ namespace EduHome.Controllers
             _sliderService = sliderService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            var vms = _sliderService.GetAll();
+            var vms = await _sliderService.GetAllAsync();
             return View(vms);
          
         }

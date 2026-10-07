@@ -4,11 +4,11 @@ namespace EduHome.Services.Interfaces
 {
     public interface ICategoryService
     {
-        void Create(CategoryCreateVM vm);
-        List<CategoryGetVM> GetAll();
-        void Remove(int id);
-         CategoryGetVM GetSingle(int id);  
-        void Update(int id ,CategoryUpdateVM vm);
+        Task CreateAsync(CategoryCreateVM vm);
+        Task <List<CategoryGetVM>> GetAllAsync();
+        Task RemoveAsync(int id);
+        Task  <CategoryGetVM> GetSingleAsync(int id);  
+        Task UpdateAsync(int id ,CategoryUpdateVM vm);
         //CreateAsync
         //GetAllAsync
         //RemoveAsync

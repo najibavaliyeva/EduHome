@@ -3,6 +3,7 @@ using EduHome.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Threading.Tasks;
 
 namespace EduHome.Areas.Admin.Controllers
 {
@@ -20,14 +21,14 @@ namespace EduHome.Areas.Admin.Controllers
         }
 
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-           var vms = _service.GetAll();
+           var vms = await _service.GetAllAsync();
             return View(vms);
         }
-        public IActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            var categories = _categoryService.GetAll();
+            var categories = await _categoryService.GetAllAsync();
             ViewBag.Categories = categories
                   .Select(x => new SelectListItem
                   {
@@ -37,22 +38,22 @@ namespace EduHome.Areas.Admin.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create(BlogCreateVM vm)
+        public async Task<IActionResult> Create(BlogCreateVM vm)
         {
             if(!ModelState.IsValid) return View(vm);
-            _service.Create(vm);
+            await _service.CreateAsync(vm);
             return RedirectToAction(nameof(Index));
 
         }
         [HttpPost]
-        public IActionResult Remove(int id) 
+        public async Task<IActionResult> Remove(int id) 
         {
-            _service.Remove(id);
+            await _service.RemoveAsync(id);
             return RedirectToAction(nameof(Index));
         }
-        public IActionResult Update(int id)
+        public async Task<IActionResult> Update(int id)
         {
-            var getVM = _service.GetSingle(id);
+            var getVM = await _service.GetSingleAsync(id);
             var vm = new BlogUpdateVM
             {
                 ImageName = getVM.Image,
@@ -62,10 +63,10 @@ namespace EduHome.Areas.Admin.Controllers
             }; return View(vm);
         }
         [HttpPost]
-        public IActionResult Update(int id , BlogUpdateVM vm)
+        public async Task<IActionResult> Update(int id , BlogUpdateVM vm)
         {
             if (!ModelState.IsValid) return View(vm);
-            _service.Update(id,vm);
+            await _service.UpdateAsync(id,vm);
             return RedirectToAction(nameof(Index));
         }
     }

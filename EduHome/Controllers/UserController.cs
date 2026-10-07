@@ -34,7 +34,7 @@ namespace EduHome.Controllers
         public async Task<IActionResult> UserRegister(AppUserRegisterVM vm)
         {
             if (!ModelState.IsValid) return View(vm);
-            await _teacherService.UserRegister(vm);
+            await _teacherService.RegisterUser(vm);
             return RedirectToAction("Index ", "Home");
         }
     }

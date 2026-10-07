@@ -5,6 +5,7 @@ using EduHome.Extensions;
 using EduHome.Models;
 using EduHome.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace EduHome.Services.Implements
 {
@@ -20,10 +21,10 @@ namespace EduHome.Services.Implements
         }
 
 
-        public void Create(BlogCreateVM vm)
+        public async Task CreateAsync(BlogCreateVM vm)
         {
 
-            var category = _context.categories.Find(vm.CategoryId);
+            var category = await _context.categories.FindAsync(vm.CategoryId);
             if (category == null) throw new Exception("Category not found");
 
             if (!vm.Image.IsSizeValid(2, FileSize.MB)) throw new Exception("Size is not valid!");
@@ -36,16 +37,16 @@ namespace EduHome.Services.Implements
                 CreatedAt = DateTime.UtcNow.AddHours(3),
                 CategoryId = category.Id,
             };
-            var entry = _context.blogs.Add(blog);
+            var entry = await _context.blogs.AddAsync(blog);
             if (entry.State != EntityState.Added) throw new Exception("Add failed");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save failed");
             
         }
 
-        public List<BlogGetVM> GetAll()
+        public async Task<List<BlogGetVM>> GetAllAsync()
         {
-            var blog = _context.blogs.AsNoTracking().Include(b => b.Category). ToList();
+            var blog = await _context.blogs.AsNoTracking().Include(b => b.Category). ToListAsync();
             var vms = blog.Select(blog => new BlogGetVM
             {
                 Id = blog.Id,
@@ -59,9 +60,9 @@ namespace EduHome.Services.Implements
 
         }
 
-        public BlogGetVM GetSingle(int id)
+        public async Task<BlogGetVM> GetSingleAsync(int id)
         {
-            var blog = _context.blogs.AsNoTracking().Include(b => b.Category).FirstOrDefault(b => b.Id == id);
+            var blog = await _context.blogs.AsNoTracking().Include(b => b.Category).FirstOrDefaultAsync(b => b.Id == id);
             if (blog == null) throw new Exception("Blog not found");
             var vm = new BlogGetVM
             {
@@ -75,22 +76,22 @@ namespace EduHome.Services.Implements
             }; return vm;    
         }
 
-        public void Remove(int id)
+        public async Task RemoveAsync(int id)
         {
-            var blog = _context.blogs.Find( id);
+            var blog = await _context.blogs.FindAsync( id);
             if (blog == null) throw new Exception("Blog not found");
             var path = $"{_env.WebRootPath}/images/blog{blog.Image}";
             if(File.Exists(path)) File.Delete(path);
 
             var entry = _context.blogs.Remove(blog);
             if (entry.State != EntityState.Deleted) throw new Exception("RemoveAsync failed");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save failed");
         }
 
-        public void Update(int id, BlogUpdateVM vm)
+        public async Task UpdateAsync(int id, BlogUpdateVM vm)
         {
-            var blog = _context.blogs.Find(id);
+            var blog = await _context.blogs.FindAsync(id);
             if (blog == null) throw new Exception("Blog not found");
             if (vm.Image != null) {
                 var path = $"{_env.WebRootPath}/images/blog{blog.Image}";
@@ -104,7 +105,7 @@ namespace EduHome.Services.Implements
 
             var entry = _context.blogs.Update(blog);
             if (entry.State != EntityState.Modified) throw new Exception("Update failed");
-            var count = _context.SaveChanges();
+            var count = await _context.SaveChangesAsync();
             if (count <= 0) throw new Exception("Save failed");
         }
     }

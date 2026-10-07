@@ -43,7 +43,7 @@ namespace EduHome.Services.Implements
             if (!result.Succeeded) throw new Exception("Add role failed");
         }
 
-        public async Task UserRegister(AppUserRegisterVM vm)
+        public async Task RegisterUser(AppUserRegisterVM vm)
         {
             var user = new AppUser
             {
