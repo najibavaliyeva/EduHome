@@ -1,0 +1,29 @@
+﻿@model List<TeacherGetAllVM>
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Firstname</th>
+                <th scope="col">Lastname</th>
+                <th scope="col">Image</th>
+                <th scope="col">Speciality</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <th scope="row">@item.Id</th>
+                    <td>@item.Firstname</td>
+                    <td>@item.Lastname</td>
+                    <td><img style="width:100px;height:100px;object-fit:cover;" class="img-thumbnail" src="~/images/teacher/@item.Image" /></td>
+                    <td>@item.Speciality</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a class="btn btn-default" asp-controller="dashboard" asp-action="index">Go dashboard</a>
+</div>
