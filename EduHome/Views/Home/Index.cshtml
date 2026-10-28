@@ -1,11 +1,11 @@
 ﻿
-@model List<SliderGetVM>
+@model HomeVM
 <!-- Background Area Start -->
 <section id="slider-container" class="slider-area two">
     <div class="slider-owl owl-theme owl-carousel">
         <!-- Start Slingle Slide -->
             <!-- Start Slider Content -->
-            @foreach(var item in Model)
+            @foreach(var item in Model.Sliders)
             {
         <div class="single-slide item" style="background-image: url(images/slider/@item.Image)">
                 <div class="slider-content-area">

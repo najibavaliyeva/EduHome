@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.18.1" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.30" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.30">
       <PrivateAssets>all</PrivateAssets>
@@ -21,6 +22,7 @@
     <Folder Include="Areas\Teacher\Data\" />
     <Folder Include="wwwroot\images\blog\" />
     <Folder Include="wwwroot\images\course\" />
+    <Folder Include="wwwroot\images\teacher\" />
     <Folder Include="wwwroot\images\slider\" />
     <Folder Include="wwwroot\im\" />
   </ItemGroup>

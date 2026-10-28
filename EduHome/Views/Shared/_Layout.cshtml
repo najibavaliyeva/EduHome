@@ -1,52 +1,106 @@
-﻿<!doctype html>
+﻿
+<!doctype html>
 <html class="no-js" lang="en">
 
 <!-- Mirrored from demo.devitems.com/eduhome/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jun 2020 19:37:50 GMT -->
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Eduhome - Educational HTML Template</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Eduhome - Educational HTML Template</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
 
-    <link rel="stylesheet" href="~/css/bootstrap.min.css">
-    <link rel="stylesheet" href="~/css/animate.css">
-    <link rel="stylesheet" href="~/css/meanmenu.css">
-    <link rel="stylesheet" href="~/css/magnific-popup.css">
-    <link rel="stylesheet" href="~/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="~/css/font-awesome.min.css">
-    <link rel="stylesheet" href="~/css/et-line-icon.css">
-    <link rel="stylesheet" href="~/css/reset.css">
-    <link rel="stylesheet" href="~/css/ionicons.min.css">
-    <link rel="stylesheet" href="~/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="~/css/style.css">
-    <link rel="stylesheet" href="~/css/responsive.css">
+        <link rel="stylesheet" href="~/css/bootstrap.min.css">
+        <link rel="stylesheet" href="~/css/animate.css">
+        <link rel="stylesheet" href="~/css/meanmenu.css">
+        <link rel="stylesheet" href="~/css/magnific-popup.css">
+        <link rel="stylesheet" href="~/css/owl.carousel.min.css">
+        <link rel="stylesheet" href="~/css/font-awesome.min.css">
+        <link rel="stylesheet" href="~/css/et-line-icon.css">
+        <link rel="stylesheet" href="~/css/reset.css">
+        <link rel="stylesheet" href="~/css/ionicons.min.css">
+        <link rel="stylesheet" href="~/css/material-design-iconic-font.min.css">
+        <link rel="stylesheet" href="~/css/style.css">
+        <link rel="stylesheet" href="~/css/responsive.css">
 
+        <script src="~/js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-    <script src="~/js/vendor/modernizr-2.8.3.min.js"></script>
-</head>
-<body>
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    <!-- Header Area Start -->
-    <header class="top">
-        <div class="header-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                        <div class="header-top-left">
-                            <p>HAVE ANY QUESTION ?  +880 5698  598  6587</p>
-                        </div>
-                    </div>
+        <!-- Header Area Start -->
+		<header class="top">
+		    <div class="header-top">
+		        <div class="container">
+		            <div class="row">
+		                <div class="col-md-8 col-sm-8 col-xs-12">
+		                    <div class="header-top-left">
+		                        <p>HAVE ANY QUESTION ?  +880 5698  598  6587</p>
+		                    </div>
+		                </div>
                     <div class="col-md-4 col-sm-4 col-xs-12">
                         <div class="header-top-right text-right">
                             <ul>
-                                <li><a href="login.html">login</a></li>
-                                <li><a asp-controller="user" asp-action="teacherregister">signup</a></li>
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <!-- İstifadəçi daxil olubsa bu hissə görünəcək -->
+                                                @if (User.IsInRole("Admin"))
+                                    {
+                                        <li>
+                                            <a asp-area="admin" asp-controller="dashboard" asp-action="index" style="display: inline; margin: 0; padding: 0;">
+                                                <i class="fa fa-user"></i> @User.Identity.Name
+                                            </a>
+                                        </li>
+                                    }
+
+                                @if (User.IsInRole("Teacher"))
+                                    {
+                                        <li>
+                                            <a asp-area="teacher" asp-controller="dashboard" asp-action="index" style="display: inline; margin: 0; padding: 0;">
+                                                <i class="fa fa-user"></i> @User.Identity.Name
+                                            </a>
+                                        </li>
+                                    }
+
+                                    @if (User.IsInRole("Student"))
+                                {
+                                            <li>
+                                                <a asp-controller="student" asp-action="index" style="display: inline; margin: 0; padding: 0;">
+                                                    <i class="fa fa-user"></i> @User.Identity.Name
+                                                </a>
+                                            </li>
+                                }
+                                <li>
+                                        <form asp-controller="Authenticate"
+                                              asp-action="Logout"
+                                              method="post"
+                                              style="display: inline-block; margin: 0;">
+
+                                            <button type="submit"
+                                                    style="display: inline-block !important;
+                                                visibility: visible !important;
+                                                opacity: 1 !important;
+                                                background: #007bff;
+                                                color: white;
+                                                border: none;
+                                                padding: 6px 12px;
+                                                cursor: pointer;">
+                                                Logout
+                                            </button>
+                                        </form>
+                                    </li>
+                                }
+                                else
+                                {
+                                    <!-- İstifadəçi daxil olmayıbsa login/signup görünəcək -->
+                                    <li><a asp-controller="Authenticate" asp-action="Login">login</a></li>
+                                    <li><a asp-controller="Student" asp-action="Register">signup</a></li>
+                                }
                             </ul>
                         </div>
                     </div>
@@ -69,21 +123,17 @@
                                     <ul>
                                         <li>
                                             <a asp-controller="Home" asp-action="Index">Home</a>
-                                  
                                         </li>
                                         <li><a asp-controller="About" asp-action="Index">About</a></li>
-                                       
-                                           <li> <a asp-controller="Course" asp-action="Index">Courses</a>
-                                          
-                                        
-                                     
-                                       
-                                            <li><a asp-controller="Teacher" asp-action="Index">Teachers</a>
-                                          
+
+                                        <li>
+                                            <a asp-controller="Course" asp-action="Index">Courses</a>
+                                        </li>
+                                        <li>
+                                            <a asp-controller="Instructor" asp-action="Index">Teachers</a>
                                         </li>
                                         <li>
                                             <a asp-controller="Blog" asp-action="Index">Blogs</a>
-                                           
                                         </li>
                                         <li><a asp-controller="Contact" asp-action="Index">Contact</a></li>
                                     </ul>
@@ -119,7 +169,7 @@
         </div>
     </header>
     <!-- Header Area End -->
-    @RenderBody()
+@RenderBody()
     <!-- Subscribe Start -->
     <div class="subscribe-area pt-60 pb-70">
         <div class="container">
@@ -142,6 +192,7 @@
                         <div class="mailchimp-alerts">
                             <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
                             <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+
                             <div class="mailchimp-error"></div><!-- mailchimp-error end -->
                         </div>
                         <!-- mailchimp-alerts end -->
@@ -219,18 +270,17 @@
     </footer>
     <!-- Footer End -->
 
-    <script src="js/vendor/jquery-1.12.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.meanmenu.js"></script>
-    <script src="js/jquery.magnific-popup.js"></script>
-    <script src="js/ajax-mail.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.mb.YTPlayer.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="~/js/vendor/jquery-1.12.0.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery.meanmenu.js"></script>
+    <script src="~/js/jquery.magnific-popup.js"></script>
+    <script src="~/js/ajax-mail.js"></script>
+    <script src="~/js/owl.carousel.min.js"></script>
+    <script src="~/js/jquery.mb.YTPlayer.js"></script>
+    <script src="~/js/jquery.nicescroll.min.js"></script>
+    <script src="~/js/plugins.js"></script>
+    <script src="~/js/main.js"></script>
 </body>
 
 <!-- Mirrored from demo.devitems.com/eduhome/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 21 Jun 2020 19:41:25 GMT -->
 </html>
-

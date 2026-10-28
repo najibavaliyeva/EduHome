@@ -9,6 +9,7 @@ namespace EduHome.Models
         public string Text { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; } // one teref
-
+        public string TeacherId { get; set; }
+        public Teacher Teacher { get; set; }    
     }
 }

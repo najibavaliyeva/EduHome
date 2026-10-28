@@ -3,7 +3,9 @@ using EduHome.Contexts;
 using EduHome.Enums;
 using EduHome.Extensions;
 using EduHome.Models;
+using EduHome.Models.BaseModel;
 using EduHome.Services.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection.Metadata;
 using System.Threading.Tasks;
@@ -14,17 +16,22 @@ namespace EduHome.Services.Implements
     {
         readonly IWebHostEnvironment _env;
         readonly AppDbContext _context;
+        readonly UserManager<BaseUser> _userManager;
 
-        public CourseService(AppDbContext context, IWebHostEnvironment env)
+        public CourseService(AppDbContext context, IWebHostEnvironment env, UserManager<BaseUser> userManager)
         {
             _context = context;
             _env = env;
+            _userManager = userManager;
         }
 
         public async Task CreateAsync(CourseCreateVM vm)
         {
             var category = await _context.categories.FindAsync(vm.CategoryId);
             if (category == null) throw new Exception("Category not found");
+            var teacher = await _userManager.FindByIdAsync(vm.TeacherId);
+            if (teacher == null) throw new Exception("Teacher not found");
+
 
             if (!vm.Image.IsSizeValid(2, FileSize.MB)) throw new Exception("Size is not valid!");
             if (!vm.Image.IsFormatValid()) throw new Exception("Format is not valid");
@@ -44,7 +51,8 @@ namespace EduHome.Services.Implements
                 StartsAt = vm.StartsAt,
                 CreatedAt = DateTime.UtcNow.AddHours(3),
                 StudentCapacity = vm.StudentCapacity,
-                Title = vm.Title
+                Title = vm.Title,
+                TeacherId = teacher.Id
             };
             var entry = await _context.courses.AddAsync(course);
             if (entry.State != EntityState.Added) throw new Exception("Add failed");
@@ -55,8 +63,8 @@ namespace EduHome.Services.Implements
 
         public async Task<List<CourseGetVM>> GetAllAsync()
         {
-            var course = await _context.courses.AsNoTracking().Include(c =>c.Category).ToListAsync();
-            var vms = course.Select(course => new CourseGetVM
+            var course =  _context.courses.AsNoTracking().Include(c =>c.Category).Include(c=> c.Teacher).AsQueryable();
+            var vms = await course.Select(course => new CourseGetVM
             {
                 ClassDurationInHours = course.ClassDurationInHours,
                 Description = course.Description,
@@ -73,14 +81,16 @@ namespace EduHome.Services.Implements
                 CategoryId = course.CategoryId,
                 Level = course.SkillLevel,
                 LanguageValue = course.Language,
-                Id = course.Id
-            }).ToList();
+                Id = course.Id,
+                CategoryName = course.Category.Name,
+                TeacherName = course.Teacher.UserName
+            }).ToListAsync();
             return vms;
         }
 
         public async Task<CourseGetVM> GetSingleAsync(int id)
         {
-           var course = await _context.courses.AsNoTracking().FirstAsync( course =>  course.Id== id  );
+           var course = await _context.courses.AsNoTracking().Include(c=> c.Category).Include(c=>c.Teacher).FirstOrDefaultAsync( course =>  course.Id== id  );
             if (course == null) throw new Exception("Course not found");
             var vm = new CourseGetVM
             {
@@ -99,7 +109,9 @@ namespace EduHome.Services.Implements
                 Image = course.Image,
                 Id = course.Id,
                 Level = course.SkillLevel,
-                LanguageValue = course.Language
+                LanguageValue = course.Language,
+                CategoryName = course.Category.Name,
+                TeacherName = course.Teacher.UserName
             };
             return vm;
             

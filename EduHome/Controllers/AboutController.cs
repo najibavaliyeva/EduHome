@@ -1,12 +1,27 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using EduHome.Services.Interfaces;
+using EduHome.ViewModels.About;
+using Microsoft.AspNetCore.Mvc;
 
 namespace EduHome.Controllers
 {
     public class AboutController : Controller
     {
-        public IActionResult Index()
+        readonly ITeacherService _teacherService;
+
+        public AboutController(ITeacherService teacherService)
         {
-            return View();
+            _teacherService = teacherService;
+        }
+
+        public async Task<IActionResult> Index()
+        {
+            var teachers = await _teacherService.GetAllAsync();
+            var vm = new AboutVM
+            {
+                Teachers = teachers
+            };
+            return View(vm);
         }
     }
 }
+        

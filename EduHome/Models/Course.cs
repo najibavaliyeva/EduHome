@@ -1,5 +1,6 @@
 ﻿using EduHome.Enums;
 using EduHome.Models.BaseModel;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace EduHome.Models
 {
@@ -19,7 +20,9 @@ namespace EduHome.Models
       public bool IsSelfAssesment {  get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; } // one teref
-
+        [ForeignKey(nameof(Teacher))]
+        public string TeacherId { get; set; }
+        public Teacher Teacher { get; set; }
 
     }
 }

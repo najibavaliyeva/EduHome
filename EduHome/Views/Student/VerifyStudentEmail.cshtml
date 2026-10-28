@@ -1,0 +1,20 @@
+﻿@model OtpVM
+@{
+    ViewData["Title"] = "Verify Email";
+}
+
+<h2>Email Verification</h2>
+
+<p>Verification code was sent to: <strong>@ViewBag.Email</strong></p>
+
+<form asp-action="VerifyStudentEmail" method="post">
+    <input type="hidden" asp-for="Email" value="@ViewBag.Email" />
+
+    <div class="mb-3">
+        <label for="code" class="form-label">Verification Code</label>
+        <input asp-for="Otp" class="form-control"
+               placeholder="Enter verification code" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Verify</button>
+</form>

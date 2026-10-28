@@ -1,0 +1,68 @@
+﻿@model EduHome.ViewModels.Student.StudentGetVM
+
+@{
+    ViewData["Title"] = "Student Profile";
+}
+
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm border-0 rounded-4">
+                <!-- Header / Cover Section -->
+                <div class="card-header bg-primary text-white p-4 rounded-top-4 d-flex align-items-center justify-content-between">
+                    <div>
+                        <h3 class="mb-1 text-white fw-bold">@Model.FirstName @Model.LastName</h3>
+                        <p class="mb-0 text-white-50">Student Profile</p>
+                    </div>
+                    <div class="bg-white text-primary rounded-circle d-flex align-items-center justify-content-center fw-bold shadow-sm" style="width: 60px; height: 60px; font-size: 1.5rem;">
+                        @(string.IsNullOrEmpty(Model.FirstName) ? "S" : Model.FirstName.Substring(0, 1).ToUpper())@(string.IsNullOrEmpty(Model.LastName) ? "" : Model.LastName.Substring(0, 1).ToUpper())
+                    </div>
+                </div>
+
+                <!-- Profile Body -->
+                <div class="card-body p-4">
+                    <h5 class="text-secondary mb-4 border-bottom pb-2">Personal Information</h5>
+
+                    <div class="row g-3">
+
+                        <!-- Email Address -->
+                        <div class="col-md-6">
+                            <label class="form-label text-muted fw-semibold small mb-1">Email Address</label>
+                            <input type="email" class="form-control bg-light" value="@Model.Email" readonly />
+                        </div>
+
+                        <!-- First Name -->
+                        <div class="col-md-6">
+                            <label class="form-label text-muted fw-semibold small mb-1">First Name</label>
+                            <input type="text" class="form-control bg-light" value="@Model.FirstName" readonly />
+                        </div>
+
+                        <!-- Last Name -->
+                        <div class="col-md-6">
+                            <label class="form-label text-muted fw-semibold small mb-1">Last Name</label>
+                            <input type="text" class="form-control bg-light" value="@Model.LastName" readonly />
+                        </div>
+
+                        <!-- University -->
+                        <div class="col-md-6">
+                            <label class="form-label text-muted fw-semibold small mb-1">University</label>
+                            <input type="text" class="form-control bg-light" value="@Model.University" readonly />
+                        </div>
+
+                        <!-- Birth Date -->
+                        <div class="col-md-6">
+                            <label class="form-label text-muted fw-semibold small mb-1">Date of Birth</label>
+                            <input type="text" class="form-control bg-light" value="@Model.BirthDate.ToString("MM/dd/yyyy")" readonly />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Footer / Action Buttons -->
+                <div class="card-footer bg-white border-0 p-4 pt-0 d-flex justify-content-end gap-2">
+                    <a asp-action="Index" class="btn btn-outline-secondary px-4">Back</a>
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary px-4">Edit Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

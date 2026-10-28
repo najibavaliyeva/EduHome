@@ -3,6 +3,7 @@ using EduHome.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace EduHome.Areas.Admin.Controllers
@@ -40,7 +41,8 @@ namespace EduHome.Areas.Admin.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(BlogCreateVM vm)
         {
-            if(!ModelState.IsValid) return View(vm);
+            vm.TeacherId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (!ModelState.IsValid) return View(vm);
             await _service.CreateAsync(vm);
             return RedirectToAction(nameof(Index));
 
@@ -69,5 +71,6 @@ namespace EduHome.Areas.Admin.Controllers
             await _service.UpdateAsync(id,vm);
             return RedirectToAction(nameof(Index));
         }
+
     }
 }

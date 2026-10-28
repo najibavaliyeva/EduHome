@@ -3,7 +3,9 @@ using EduHome.Contexts;
 using EduHome.Enums;
 using EduHome.Extensions;
 using EduHome.Models;
+using EduHome.Models.BaseModel;
 using EduHome.Services.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
@@ -13,11 +15,13 @@ namespace EduHome.Services.Implements
     {
          private readonly AppDbContext _context;
        private  readonly IWebHostEnvironment _env;
+        private readonly UserManager<BaseUser> _userManager;
 
-        public BlogService(AppDbContext context, IWebHostEnvironment env)
+        public BlogService(AppDbContext context, IWebHostEnvironment env, UserManager<BaseUser> userManager)
         {
             _context = context;
             _env = env;
+            _userManager = userManager;
         }
 
 
@@ -26,6 +30,8 @@ namespace EduHome.Services.Implements
 
             var category = await _context.categories.FindAsync(vm.CategoryId);
             if (category == null) throw new Exception("Category not found");
+            var teacher = await _userManager.FindByIdAsync(vm.TeacherId);
+            if (teacher == null) throw new Exception("Teacher not found");
 
             if (!vm.Image.IsSizeValid(2, FileSize.MB)) throw new Exception("Size is not valid!");
             if (!vm.Image.IsFormatValid()) throw new Exception("Format is not valid");
@@ -36,6 +42,7 @@ namespace EduHome.Services.Implements
                 Image = vm.Image.UploadFile(_env.WebRootPath, "images/blog"),
                 CreatedAt = DateTime.UtcNow.AddHours(3),
                 CategoryId = category.Id,
+                TeacherId = teacher.Id
             };
             var entry = await _context.blogs.AddAsync(blog);
             if (entry.State != EntityState.Added) throw new Exception("Add failed");
@@ -46,23 +53,25 @@ namespace EduHome.Services.Implements
 
         public async Task<List<BlogGetVM>> GetAllAsync()
         {
-            var blog = await _context.blogs.AsNoTracking().Include(b => b.Category). ToListAsync();
-            var vms = blog.Select(blog => new BlogGetVM
+            var blogs =  _context.blogs.AsNoTracking().Include(b => b.Category).Include(b=> b.Teacher).AsQueryable();
+            var vms = await blogs.Select(blog => new BlogGetVM
             {
                 Id = blog.Id,
                 CreatedAt = blog.CreatedAt,
                 Image = blog.Image,
                 Title = blog.Title,
                 Text = blog.Text,
-                CategoryName = blog.Category.Name
-            }).ToList();
+                CategoryName = blog.Category.Name,
+                TeacherName = blog.Teacher.UserName,
+                UpdatedAt = blog.UpdatedAt
+            }).ToListAsync();
             return vms;
 
         }
 
         public async Task<BlogGetVM> GetSingleAsync(int id)
         {
-            var blog = await _context.blogs.AsNoTracking().Include(b => b.Category).FirstOrDefaultAsync(b => b.Id == id);
+            var blog = await _context.blogs.AsNoTracking().Include(b => b.Category).Include(b=>b.Teacher).FirstOrDefaultAsync(b => b.Id == id);
             if (blog == null) throw new Exception("Blog not found");
             var vm = new BlogGetVM
             {
@@ -71,7 +80,9 @@ namespace EduHome.Services.Implements
                 Image = blog.Image,
                 Title = blog.Title,
                 Text = blog.Text,
-                CategoryName = blog.Category.Name
+                CategoryName = blog.Category.Name,
+                TeacherName = blog.Teacher.UserName, 
+                UpdatedAt = blog.UpdatedAt
 
             }; return vm;    
         }

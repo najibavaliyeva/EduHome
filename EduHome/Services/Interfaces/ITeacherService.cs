@@ -8,11 +8,11 @@ namespace EduHome.Services.Interfaces
     {
 
         Task RegisterAsync(TeacherRegisterVM vm);
-        Task RegisterUserAsync(AppUserRegisterVM vm);
         Task RemoveAccountAsync(string id);
         Task UpdateAsync(string id, TeacherUpdateVM vm);
         Task<List<TeacherGetAllVM>> GetAllAsync();
         Task<TeacherGetSingleVM> GetSingleAsync(string id);
+        Task<bool> VerifyAccountAsync(string email, int otp);
         //ChangeEmail
         //changePassword
     }

@@ -127,6 +127,10 @@ namespace EduHome.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<string>("TeacherId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Text")
                         .IsRequired()
                         .HasColumnType("text");
@@ -141,6 +145,8 @@ namespace EduHome.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("TeacherId");
 
                     b.ToTable("blogs");
                 });
@@ -218,6 +224,10 @@ namespace EduHome.Migrations
                     b.Property<int>("StudentCapacity")
                         .HasColumnType("integer");
 
+                    b.Property<string>("TeacherId")
+                        .IsRequired()
+                        .HasColumnType("text");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasColumnType("text");
@@ -228,6 +238,8 @@ namespace EduHome.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("TeacherId");
 
                     b.ToTable("courses");
                 });
@@ -451,7 +463,15 @@ namespace EduHome.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("EduHome.Models.Teacher", "Teacher")
+                        .WithMany("Blogs")
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Category");
+
+                    b.Navigation("Teacher");
                 });
 
             modelBuilder.Entity("EduHome.Models.Course", b =>
@@ -462,7 +482,15 @@ namespace EduHome.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("EduHome.Models.Teacher", "Teacher")
+                        .WithMany("Courses")
+                        .HasForeignKey("TeacherId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Category");
+
+                    b.Navigation("Teacher");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -517,6 +545,13 @@ namespace EduHome.Migrations
                 });
 
             modelBuilder.Entity("EduHome.Models.Category", b =>
+                {
+                    b.Navigation("Blogs");
+
+                    b.Navigation("Courses");
+                });
+
+            modelBuilder.Entity("EduHome.Models.Teacher", b =>
                 {
                     b.Navigation("Blogs");
 

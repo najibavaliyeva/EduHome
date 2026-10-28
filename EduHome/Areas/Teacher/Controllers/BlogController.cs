@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace EduHome.Areas.Teacher.Controllers
 {
+    [Area("teacher")]
     public class BlogController : Controller
     {
         readonly IBlogService _service;
@@ -30,12 +31,6 @@ namespace EduHome.Areas.Teacher.Controllers
                 {
                     Value = x.Id.ToString(),
                     Text = x.Name
-                });
-            ViewBag.Teachers = teachers
-                .Select(x => new SelectListItem
-                {
-                    Value = x.Id.ToString(),
-                    Text = $"{x.Firstname} {x.Lastname}"
                 });
             return View();
         }

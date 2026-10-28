@@ -20,5 +20,7 @@ namespace EduHome.Areas.Admin.ViewModels.Course
         public ushort StudentCapacity { get; set; }
         public bool IsSelfAssesment { get; set; }
         public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
+        public string TeacherName { get; set; }
     }
 }

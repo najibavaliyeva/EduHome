@@ -10,6 +10,7 @@ namespace EduHome.Models
         public string Image { get; set; }
         public byte ExperienceInYear { get; set; }
         public string Faculty { get; set; }
-
+        public ICollection<Blog> Blogs { get; set; }= new List<Blog>();
+        public ICollection<Course> Courses { get; set; } = new List<Course>();
     }
 }

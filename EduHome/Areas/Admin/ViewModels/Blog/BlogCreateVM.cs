@@ -15,5 +15,7 @@ namespace EduHome.Areas.Admin.ViewModels.Blog
         //teacher
         [Required]
         public int CategoryId { get; set; } // one terefdr
+ 
+        public string? TeacherId  { get; set; }
     }
 }

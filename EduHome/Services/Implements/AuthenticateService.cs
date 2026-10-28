@@ -19,10 +19,20 @@ namespace EduHome.Services.Implements
 
         public async Task LoginAsync(LoginVM vm)
         {
-            var user = await _userManager.FindByNameAsync(vm.Username);
+            var user = await _userManager.FindByNameAsync(vm.Username)
+                       ?? await _userManager.FindByEmailAsync(vm.Username);
+
+            if (user == null)
+                throw new Exception("Username or password is not correct!");
 
             var result = await _signManager.PasswordSignInAsync(user, vm.Password, true, false);
-            if (!result.Succeeded) throw new Exception("Username or password is not correct!");
+            if (!result.Succeeded)
+                throw new Exception("Username or password is not correct!");
+        }
+        public async Task LogoutAsync()
+        {
+            await _signManager.SignOutAsync();
+
         }
     }
 }

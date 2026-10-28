@@ -5,5 +5,6 @@ namespace EduHome.Services.Interfaces
     public interface IAuthenticationService
     {
         Task LoginAsync(LoginVM vm);
+        Task LogoutAsync();
     }
 }

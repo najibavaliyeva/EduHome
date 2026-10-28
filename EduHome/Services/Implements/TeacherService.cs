@@ -5,7 +5,6 @@ using EduHome.Models;
 using EduHome.Models.BaseModel;
 using EduHome.Services.Interfaces;
 using EduHome.ViewModels.Teacher;
-using EduHome.ViewModels.user;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,11 +14,16 @@ namespace EduHome.Services.Implements
     {
         readonly UserManager<BaseUser> _userManager;
         readonly IWebHostEnvironment _env;
+        readonly IEmailService _emailService;
+        readonly IOtpService _otpService;
 
-        public TeacherService(UserManager<BaseUser> userManager, IWebHostEnvironment env)
+
+        public TeacherService(UserManager<BaseUser> userManager, IWebHostEnvironment env, IEmailService emailService, IOtpService otpService)
         {
             _userManager = userManager;
             _env = env;
+            _emailService = emailService;
+            _otpService = otpService;
         }
         public async Task<List<TeacherGetAllVM>> GetAllAsync()
         {
@@ -74,27 +78,12 @@ namespace EduHome.Services.Implements
             };
             var result = await _userManager.CreateAsync(teacher, vm.Password);
             if (!result.Succeeded) throw new Exception("RegisterAsync user failed!");
-              result = await _userManager.AddToRoleAsync(teacher, "Teacher");
+            result = await _userManager.AddToRoleAsync(teacher, "Teacher");
             if (!result.Succeeded) throw new Exception("Add role failed!");
+            var otp = _otpService.GenerateOtp(teacher.Email);
+            await _emailService.SendEmailAsync(teacher.Email, "Verify Account", $"Your otp code is :{otp}", false);
         }
-        public async Task RegisterUserAsync(AppUserRegisterVM vm)
-        {
-            var user = new AppUser
-            {
-                Email = vm.Email,
-                Firstname = vm.Firstname,
-                Lastname = vm.Lastname,
-                PhoneNumber = vm.PhoneNumber,
-                BirthDate = vm.Birthdate,
-                UserName = vm.Username,
-            };
 
-            var result = await _userManager.CreateAsync(user, vm.Password);
-            if (!result.Succeeded) throw new Exception(result.Errors.FirstOrDefault().Description);
-
-            result = await _userManager.AddToRoleAsync(user, "Student");
-            if (!result.Succeeded) throw new Exception(result.Errors.FirstOrDefault().Description);
-        }
         public async Task RemoveAccountAsync(string id)
         {
             var teacher = await _userManager.Users.OfType<Teacher>().FirstOrDefaultAsync(t => t.Id == id);
@@ -111,13 +100,13 @@ namespace EduHome.Services.Implements
         {
             var teacher = await _userManager.Users.OfType<Teacher>().FirstOrDefaultAsync(t => t.Id == id);
             if (teacher == null) throw new Exception("Teacher not found!");
-            
-             if (vm.Image != null)
-                {
-                    var path = $"{_env.WebRootPath}/images/user/{teacher.Image}";
-                    if (File.Exists(path)) File.Delete(path);
-                    teacher.Image = vm.Image.UploadFile(_env.WebRootPath, "images/teacher");
-                }
+
+            if (vm.Image != null)
+            {
+                var path = $"{_env.WebRootPath}/images/user/{teacher.Image}";
+                if (File.Exists(path)) File.Delete(path);
+                teacher.Image = vm.Image.UploadFile(_env.WebRootPath, "images/teacher");
+            }
             teacher.Faculty = vm.Faculty;
             teacher.Firstname = vm.Firstname;
             teacher.Lastname = vm.Lastname;
@@ -129,5 +118,22 @@ namespace EduHome.Services.Implements
             var result = await _userManager.UpdateAsync(teacher);
             if (!result.Succeeded) throw new Exception(result.Errors.FirstOrDefault().Description);
         }
+
+
+        public async Task<bool> VerifyAccountAsync(string email, int otp)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if (user == null) throw new Exception("user not found!");
+
+            var result = _otpService.VerifyOtp(email, otp);
+            if (result)
+            {
+                user.EmailConfirmed = true;
+                var iResult = await _userManager.UpdateAsync(user);
+                if (!iResult.Succeeded) throw new Exception("Verify email failed");
+            }
+            return result;
+        }
+
     }
 }
