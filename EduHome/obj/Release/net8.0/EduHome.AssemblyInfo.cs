@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("5df86df1-4a1a-492c-a442-bc38b84a9633")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("EduHome")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69e32f5a4e4558b58a02028870a2c5c22c86279c")]
 [assembly: System.Reflection.AssemblyProductAttribute("EduHome")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EduHome")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

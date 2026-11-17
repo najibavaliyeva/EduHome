@@ -6,5 +6,6 @@ namespace EduHome.Services.Interfaces
     {
         Task LoginAsync(LoginVM vm);
         Task LogoutAsync();
+        Task ResetPasswordAsync(string email, string token, string newPassword);
     }
 }

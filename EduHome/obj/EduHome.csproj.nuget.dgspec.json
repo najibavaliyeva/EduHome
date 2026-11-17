@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Backend\\EduHome\\EduHome\\EduHome.csproj": {}
+    "D:\\Web Developer\\Backend\\MVC\\EduHome\\EduHome\\EduHome.csproj": {}
   },
   "projects": {
-    "D:\\Backend\\EduHome\\EduHome\\EduHome.csproj": {
+    "D:\\Web Developer\\Backend\\MVC\\EduHome\\EduHome\\EduHome.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Backend\\EduHome\\EduHome\\EduHome.csproj",
+        "projectUniqueName": "D:\\Web Developer\\Backend\\MVC\\EduHome\\EduHome\\EduHome.csproj",
         "projectName": "EduHome",
-        "projectPath": "D:\\Backend\\EduHome\\EduHome\\EduHome.csproj",
+        "projectPath": "D:\\Web Developer\\Backend\\MVC\\EduHome\\EduHome\\EduHome.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\Backend\\EduHome\\EduHome\\obj\\",
+        "outputPath": "D:\\Web Developer\\Backend\\MVC\\EduHome\\EduHome\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

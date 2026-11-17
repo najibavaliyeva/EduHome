@@ -39,7 +39,7 @@ namespace EduHome.Services.Implements
             result = await _userManager.AddToRoleAsync(student, "Student");
             if (!result.Succeeded) throw new Exception(result.Errors.FirstOrDefault().Description);
             var otp = _otpService.GenerateOtp(student.Email);
-            await _emailService.SendEmailAsync(student.Email, "Verify Account", $"Your OTP code is: {otp}/nThis code expires in 5 Minutes.", false);
+            await _emailService.SendEmailAsync(student.Email, "Verify Account", $"Your OTP code is: {otp} \n This code expires in 5 Minutes.", false);
         }
 
         public async Task<bool> VerifyAccountAsync(string email, int otp)

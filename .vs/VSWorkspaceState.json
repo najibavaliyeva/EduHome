@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\EduHome",
+    "\\EduHome\\Controllers",
+    "\\EduHome\\Enums"
   ],
+  "SelectedNode": "\\EduHome\\Controllers\\CourseController.cs",
   "PreviewInSolutionExplorer": false
 }

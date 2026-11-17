@@ -17,8 +17,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("default")));
-builder.Services.AddIdentity<BaseUser, Role>().AddEntityFrameworkStores<AppDbContext>();
-
+builder.Services.AddIdentity<BaseUser, Role>().AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 builder.Services.AddScoped<ISliderService, SliderService>();
 builder.Services.AddScoped<IBlogService, BlogService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();

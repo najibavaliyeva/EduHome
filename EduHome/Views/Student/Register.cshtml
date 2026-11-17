@@ -1,4 +1,4 @@
-﻿@model StudentRegisterVM 
+﻿@model StudentRegisterVM
 <!-- Banner Area Start -->
 <div class="banner-area-wrapper">
     <div class="banner-area text-center">
@@ -28,7 +28,7 @@
                             <span>Please login using account detail bellow.</span>
                         </div>
                         <div class="login-form">
-                            <form asp-action="UserRegister"  method="post">
+                            <form asp-action="Register" method="post">
 
                                 <div class="form-group">
                                     <label asp-for="Firstname">First Name</label>
@@ -88,16 +88,16 @@
                                     <div class="login-toggle-btn">
                                         <input type="checkbox" id="remember">
                                         <label for="remember">Remember me</label>
-                                        <a href="#">Forgot Password?</a>
                                     </div>
                                     <button type="submit" class="default-btn">Sign up</button>
                                 </div>
                             </form>
-                            <a asp-action="TeacherRegister">Register as teacher</a>
+                            <a asp-controller="User" asp-action="TeacherRegister">Register as teacher</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- Register end -->
